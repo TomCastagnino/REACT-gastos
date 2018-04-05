@@ -58,11 +58,11 @@ npm manifest:
       "webpack": "3.1.0"
     },
     "devDependencies": {
-      "react-test-renderer": "16.0.0",
-      "jest": "^20.0.4",
       "enzyme": "3.0.0",
       "enzyme-adapter-react-16": "1.0.0",
       "enzyme-to-json": "3.0.1",
+      "jest": "^20.0.4",
+      "react-test-renderer": "16.0.0",
       "webpack-dev-server": "2.5.1"
     }
   }
@@ -6567,7 +6567,7 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 4294967295
+  Exit code: 1
   Command: C:\WINDOWS\system32\cmd.exe
   Arguments: /d /s /c webpack-dev-server
   Directory: C:\Users\Tom\Desktop\Web\REACT\expenses-app
