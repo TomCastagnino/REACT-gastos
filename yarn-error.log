@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Tom\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add rredux-thunk@2.2.0
+  C:\Program Files\nodejs\node.exe C:\Users\Tom\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js test --watch
 
 PATH: 
   C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Users\Tom\AppData\Local\Microsoft\WindowsApps;C:\Users\Tom\AppData\Local\atom\bin;C:\Users\Tom\AppData\Local\Microsoft\WindowsApps;C:\Users\Tom\AppData\Roaming\npm;C:\Users\Tom\AppData\Local\GitHubDesktop\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Heroku\bin
@@ -53,6 +53,7 @@ npm manifest:
       "react-redux": "5.0.5",
       "react-router-dom": "4.2.2",
       "redux": "3.7.2",
+      "redux-thunk": "2.2.0",
       "sass-loader": "^6.0.6",
       "style-loader": "0.18.2",
       "uuid": "3.1.0",
@@ -5362,6 +5363,10 @@ Lockfile:
     dependencies:
       balanced-match "^0.4.2"
   
+  redux-thunk@2.2.0:
+    version "2.2.0"
+    resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.2.0.tgz#e615a16e16b47a19a515766133d1e3e99b7852e5"
+  
   redux@3.7.2:
     version "3.7.2"
     resolved "https://registry.yarnpkg.com/redux/-/redux-3.7.2.tgz#06b73123215901d25d065be342eb026bc1c8537b"
@@ -6669,11 +6674,17 @@ Lockfile:
       window-size "0.1.0"
 
 Trace: 
-  Error: Couldn't find package "rredux-thunk" on the "npm" registry.
-      at new MessageError (C:\Users\Tom\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
-      at NpmResolver.<anonymous> (C:\Users\Tom\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:51625:15)
-      at Generator.next (<anonymous>)
-      at step (C:\Users\Tom\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:98:30)
-      at C:\Users\Tom\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:109:13
-      at <anonymous>
-      at process._tickCallback (internal/process/next_tick.js:188:7)
+  Error: Command failed.
+  Exit code: 1
+  Command: C:\WINDOWS\system32\cmd.exe
+  Arguments: /d /s /c jest --config=jest.config.json --watch
+  Directory: C:\Users\Tom\Desktop\Web\REACT\expenses-app
+  Output:
+  
+      at ProcessTermError.MessageError (C:\Users\Tom\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
+      at new ProcessTermError (C:\Users\Tom\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:226:113)
+      at ChildProcess.<anonymous> (C:\Users\Tom\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:30281:17)
+      at emitTwo (events.js:126:13)
+      at ChildProcess.emit (events.js:214:7)
+      at maybeClose (internal/child_process.js:925:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
